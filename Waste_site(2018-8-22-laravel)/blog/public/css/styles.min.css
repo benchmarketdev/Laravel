@@ -1,0 +1,741 @@
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url(../fonts/opensans-bold-webfont.eot);
+	src: url(../fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-bold-webfont.woff2) format("woff2"), url(../fonts/opensans-bold-webfont.woff) format("woff"), url(../fonts/opensans-bold-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans Extrabold';
+	src: url(../fonts/opensans-extrabold-webfont.eot);
+	src: url(../fonts/opensans-extrabold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-extrabold-webfont.woff2) format("woff2"), url(../fonts/opensans-extrabold-webfont.woff) format("woff"), url(../fonts/opensans-extrabold-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans Italic';
+	src: url(../fonts/opensans-italic-webfont.eot);
+	src: url(../fonts/opensans-italic-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-italic-webfont.woff2) format("woff2"), url(../fonts/opensans-italic-webfont.woff) format("woff"), url(../fonts/opensans-italic-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url(../fonts/opensans-light-webfont.eot);
+	src: url(../fonts/opensans-light-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-light-webfont.woff2) format("woff2"), url(../fonts/opensans-light-webfont.woff) format("woff"), url(../fonts/opensans-light-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/opensans-regular-webfont.eot);
+	src: url(../fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-regular-webfont.woff2) format("woff2"), url(../fonts/opensans-regular-webfont.woff) format("woff"), url(../fonts/opensans-regular-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans Semibold';
+	src: url(../fonts/opensans-semibold-webfont.eot);
+	src: url(../fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-semibold-webfont.woff2) format("woff2"), url(../fonts/opensans-semibold-webfont.woff) format("woff"), url(../fonts/opensans-semibold-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Open Sans Semibold Italic';
+	src: url(../fonts/opensans-semibolditalic-webfont.eot);
+	src: url(../fonts/opensans-semibolditalic-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/open_sans/opensans-semibolditalic-webfont.woff2) format("woff2"), url(../fonts/opensans-semibolditalic-webfont.woff) format("woff"), url(../fonts/opensans-semibolditalic-webfont.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Business;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../icons/business/Business.ttf)
+}
+
+.companies::before,
+.features .item::before,
+.top-header-block::before {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+html {
+	color: #000;
+	font: 16px/1.4 "Open Sans"
+}
+
+body {
+	background: #fff;
+	min-width: 360px
+}
+
+h1 {
+	color: #fff;
+	font-family: "Open Sans Extrabold";
+	font-size: 2.4375rem
+}
+
+h2 {
+	color: #606263;
+	font-family: "Open Sans Bold";
+	font-size: 2.0625rem
+}
+
+h3 {
+	color: #113485;
+	font-family: "Open Sans Light";
+	font-size: 1.6875rem;
+	line-height: 1.33
+}
+
+h3 strong {
+	font-family: "Open Sans Bold"
+}
+
+main {
+	overflow: hidden
+}
+
+.mobile-menu-opened .page-wrapper {
+	position: fixed
+}
+
+.btn {
+	background: #ffe400;
+	border-radius: 100vh;
+	color: #000;
+	font-family: "Open Sans Bold";
+	min-height: 50px;
+	min-width: 200px
+}
+
+.btn:hover {
+	background: #e6cd00;
+	transition: .15s
+}
+
+header {
+	background: linear-gradient(to top, transparent, rgba(0, 0, 0, .7));
+	min-height: 143px;
+	z-index: 2
+}
+
+header .logo img {
+	height: 5.313vw
+}
+
+header .nav-link {
+	color: #fff
+}
+
+header .nav-link:hover {
+	text-decoration: underline
+}
+
+header .burger-menu-button {
+	background: 0 0;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	font-size: 2rem
+}
+
+.mobile-menu-opened header .burger-menu-button {
+	color: #000
+}
+
+.mobile-menu-opened header .burger-menu-button .open,
+body:not(.mobile-menu-opened) header .burger-menu-button .close {
+	display: none
+}
+
+footer {
+	background: #333
+}
+
+footer a {
+	color: #fff!important;
+	font-size: 14px
+}
+
+footer .title {
+	color: #c6dce5
+}
+
+footer .copyright {
+	color: #999;
+	font-size: 12px
+}
+
+footer .contacts {
+	font-size: 15px
+}
+
+footer .contacts .fa::before {
+	margin-right: .5em
+}
+
+footer .item {
+	color: #fff;
+	white-space: nowrap
+}
+
+footer .socials .item {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	height: 31px;
+	transition: .15s;
+	width: 31px
+}
+
+footer .socials .item:hover {
+	background: #fff;
+	color: #333!important;
+	text-decoration: none
+}
+
+.top-header-block {
+	background: url(../img/dumpsters.jpeg) center/cover;
+	height: 46.875vw
+}
+
+.top-header-block::before {
+	background: rgba(0, 0, 0, .45);
+	content: ""
+}
+
+.top-header-block::after {
+	border-bottom: 3.1vw solid #fff;
+	border-left: 100vw solid transparent;
+	bottom: 0;
+	content: "";
+	position: absolute
+}
+
+.top-header-block .button {
+	font-size: .9375rem
+}
+
+.software .tile>* {
+	background: #113485;
+	box-shadow: .15em .15em .476em rgba(163, 163, 163, .62);
+	border-radius: .4em;
+	font-size: 1.3125rem;
+	min-height: 8.33em;
+	overflow: hidden
+}
+
+.software .tile:nth-child(even)>* {
+	background: #ffe400
+}
+
+.software .tile:nth-child(even)>* .bg-icon,
+.software .tile:nth-child(even)>* .icon,
+.software .tile:nth-child(even)>* .title {
+	color: #000
+}
+
+.software .title {
+	color: #fff;
+	font-family: "Open Sans Bold";
+	top: 55%
+}
+
+.software .bg-icon,
+.software .icon {
+	color: #fff
+}
+
+.software .icon {
+	bottom: 50%;
+	font-size: 1.5em
+}
+
+.software .bg-icon {
+	font-size: 5em;
+	opacity: .08;
+	right: -.1em;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+.companies {
+	background: url(../img/dumpsters.jpeg) bottom/cover;
+	color: #fff;
+	min-height: 480px
+}
+
+.companies::before {
+	background: rgba(17, 52, 133, .9);
+	content: ""
+}
+
+.companies::after {
+	border-bottom: 3.1vw solid #f5f5f5;
+	border-right: 100vw solid transparent;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	z-index: 2
+}
+
+.companies h2 {
+	color: #fff
+}
+
+.companies .quote {
+	font-size: 1.0625rem
+}
+
+.companies .author {
+	font-family: "Open Sans Italic";
+	font-size: .9375em
+}
+
+.companies .logos .item {
+	background: #fff;
+	border-radius: .4rem;
+	height: 6.875rem;
+	min-width: 220px
+}
+
+.companies .download a {
+	color: #fff
+}
+
+.companies .download .fa {
+	bottom: -.2em;
+	font-size: 1.5em
+}
+
+.demo {
+	background: #f5f5f5
+}
+
+.demo::after {
+	background: url(../img/three-dumpsters.png) center/cover;
+	bottom: -40px;
+	content: "";
+	height: 252px;
+	position: absolute;
+	right: 0;
+	width: 398px
+}
+
+.demo h3 {
+	font-size: 2.5625rem;
+	line-height: 1.5
+}
+
+.demo h3 strong {
+	font-family: "Open Sans Extrabold"
+}
+
+.demo .close-quote,
+.demo .open-quote {
+	color: #dfdfdf;
+	font-size: 1.2em
+}
+
+.demo .close-quote {
+	transform: translateY(70%)
+}
+
+.demo .counters .counter {
+	background: #fff;
+	color: #b1b1b1;
+	font-family: "Open Sans Extrabold";
+	font-size: 3.6875rem;
+	height: 7.74rem;
+	width: 7.74rem
+}
+
+.demo .counters .item:first-child {
+	margin-left: 1.1994188862rem
+}
+
+.demo .counters .item:nth-child(2) {
+	margin-left: 2.0989830508rem
+}
+
+.demo .counters .item:last-child .title {
+	max-width: 400px
+}
+
+.demo .counters .title {
+	color: #4c4d4e;
+	font-family: "Open Sans";
+	font-size: 1.375rem
+}
+
+.demo .counters .title::first-letter {
+	font-family: "Open Sans Bold"
+}
+
+.demo .btn {
+	box-shadow: 0 0 .8em #bbb
+}
+
+.services .description {
+	color: #afb0b0;
+	font-family: "Open Sans Semibold Italic";
+	font-size: 1.125em
+}
+
+.services .description::after {
+	background: #113485;
+	bottom: -1em;
+	content: "";
+	height: 4px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 75px
+}
+
+.services .item>* {
+	border-radius: 5px;
+	box-shadow: 0 0 13px rgba(162, 162, 162, .8);
+	height: 9.06em
+}
+
+.services .item.yellow>* {
+	background: #ffe400
+}
+
+.services .item.yellow>* .icon,
+.services .item.yellow>* .title {
+	color: #161616
+}
+
+.services .item.blue>* {
+	background: #113485
+}
+
+.services .item.blue>* .icon,
+.services .item.blue>* .title {
+	color: #fff
+}
+
+.services .title {
+	color: #797979;
+	font-family: "Open Sans Semibold";
+	font-size: 1.06em
+}
+
+.services .icon {
+	color: #ffe400;
+	font-size: 3em;
+	text-shadow: 1px 1px 3px rgba(162, 162, 162, .75)
+}
+
+.about {
+	background: url(../img/people.jpeg) center/cover;
+	height: 37vw
+}
+
+.about::before {
+	border-top: 3.1vw solid #fff;
+	border-left: 100vw solid transparent;
+	content: "";
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1
+}
+
+.about .content {
+	background: rgba(0, 0, 0, .78)
+}
+
+.about .content>* {
+	max-width: 500px
+}
+
+.about h2 {
+	color: #1da9e0;
+	font-family: "Open Sans Bold"
+}
+
+.about .text {
+	color: #fff;
+	font-family: "Open Sans Light";
+	font-size: 1.6875rem;
+	line-height: 1.37
+}
+
+.about .btn {
+	color: #252525;
+	font-family: "Open Sans Semibold";
+	font-size: 1.25rem
+}
+
+.features h3 {
+	color: #606263;
+	font-size: 2.0625rem
+}
+
+.features h3::after {
+	background: #113485;
+	bottom: -1em;
+	content: "";
+	height: 4px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 75px
+}
+
+.features h3 strong {
+	color: #042470
+}
+
+.features .item {
+	height: 160px;
+	width: 160px
+}
+
+.features .item::before {
+	border-radius: 50%;
+	border-right: 80px solid #a4adc0;
+	border-left: 80px solid #fff;
+	content: ""
+}
+
+.features .item::after {
+	background: #113485;
+	content: "";
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: -1
+}
+
+.features .item .icon {
+	background: #113485;
+	border-radius: 50%;
+	color: #ffe400;
+	font-family: Business;
+	font-size: 4.5em;
+	height: 135px;
+	width: 135px
+}
+
+.features .title {
+	font-size: 1.125rem
+}
+
+@media all and (min-width:993px) {
+	.services .services-block {
+		margin-left: -8.3333333333%;
+		margin-right: -8.3333333333%
+	}
+}
+
+@media all and (min-width:1001px) {
+	.features .block:nth-child(6n) .item::before {
+		border-right-color: transparent
+	}
+	.features .block:nth-child(6n) .item::after {
+		display: none
+	}
+}
+
+@media all and (max-width:1500px) {
+	.demo::after {
+		height: 210px;
+		width: 331px
+	}
+}
+
+@media all and (max-width:1280px) {
+	.demo h3 {
+		font-size: 2rem
+	}
+	.demo .counters .counter {
+		font-size: 3rem;
+		height: 6.2969491525rem;
+		width: 6.2969491525rem
+	}
+}
+
+@media all and (max-width:1200px) {
+	h1 {
+		font-size: 2rem
+	}
+	.companies .photo {
+		display: none
+	}
+	.about {
+		min-height: 450px
+	}
+}
+
+@media all and (max-width:1024px) {
+	header .logo img {
+		height: 50px
+	}
+	header {
+		min-height: auto
+	}
+	.top-header-block {
+		height: 480px
+	}
+	.software .tile>* {
+		min-height: 7.5em
+	}
+}
+
+@media all and (max-width:1000px) {
+	.demo::after {
+		bottom: -20px;
+		height: 161px;
+		width: 255px
+	}
+	.services .item>* {
+		font-size: .8rem
+	}
+	.about .text {
+		font-size: 1.2rem
+	}
+	.features .item::after {
+		display: none
+	}
+}
+
+@media all and (max-width:992px) {
+	.about .content>* {
+		max-width: 100%
+	}
+}
+
+@media all and (max-width:800px) {
+	h1 {
+		font-size: 1.5rem
+	}
+	h2 {
+		font-size: 1.35rem
+	}
+	h3 {
+		font-size: 1.2rem
+	}
+	.top-header-block {
+		height: 400px
+	}
+	.software .tile>* {
+		font-size: 1rem;
+		min-height: 6.5em
+	}
+	.software .title {
+		top: 45%
+	}
+	.software .icon {
+		bottom: 60%
+	}
+	.services .item>* {
+		height: 7em
+	}
+	.services .title {
+		font-size: 1em
+	}
+	.services .icon {
+		font-size: 2.2em
+	}
+	.about {
+		min-height: 300px
+	}
+	.features .item {
+		height: 100px;
+		width: 100px
+	}
+	.features .item::before {
+		border-width: 50px
+	}
+	.features .item .icon {
+		font-size: 2.5em;
+		height: 80px;
+		width: 80px
+	}
+	.features .title {
+		font-size: 1rem
+	}
+}
+
+@media all and (max-width:768px) {
+	.demo::after {
+		display: none
+	}
+	.demo .counters .item {
+		margin-left: 0!important;
+		max-width: 100%!important
+	}
+}
+
+@media all and (max-width:640px) {
+	header .nav-link {
+		color: #000
+	}
+	header .nav {
+		background: #fff;
+		display: none;
+		height: 100%;
+		left: 0;
+		margin-left: calc(100% - 300px);
+		padding-left: 1em;
+		padding-top: 5em;
+		position: fixed;
+		top: 0;
+		width: 100%
+	}
+	.mobile-menu-opened header .nav {
+		display: block
+	}
+	.mobile-menu-opened header .nav::before {
+		background: rgba(0, 0, 0, .5);
+		bottom: 0;
+		content: "";
+		left: auto;
+		position: absolute;
+		top: 0;
+		right: 100%;
+		width: 100%
+	}
+	header .nav .item {
+		color: #000;
+		display: block
+	}
+	header .burger-menu-button {
+		display: block
+	}
+	.software .bg-icon {
+		font-size: 4em
+	}
+	.demo h3 {
+		font-size: 1.5em
+	}
+	.demo .counters .counter {
+		font-size: 2rem;
+		height: 4.1979661017rem;
+		width: 4.1979661017rem
+	}
+	.demo .counters .title {
+		font-size: 1.1rem
+	}
+}

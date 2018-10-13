@@ -1,0 +1,27 @@
+---httpd.conf---
+Listen 8081
+<VirtualHost *:8081>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "F:\schoolppp\public"
+    ServerName localhost:8081
+    ErrorLog "logs/dummy-host2.example.com-error_log"
+    CustomLog "logs/dummy-host2.example.com-access_log" common
+    <Directory "F:\schoolppp\public">
+        Require all granted 
+    </Directory>
+</VirtualHost>
+
+---http-vhost.conf---
+<VirtualHost *:8081>
+DocumentRoot "F:\schoolppp\public"
+ServerName qa-staging.com
+ServerAlias www.qa-staging.com
+<Directory "F:\schoolppp\public">
+Order allow,deny
+Allow from all
+</Directory>
+</VirtualHost>
+
+
+---Laravel book URL---
+https://allaravel.com/wp-content/uploads/2017/03/Laravel-5-Essentials.pdf
